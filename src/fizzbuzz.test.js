@@ -25,7 +25,7 @@ describe('The fizzBuzz function should', () => {
     expect(fizzBuzz(3)).toEqual('Fizz');
     });
     
-    it ('return 1 when given 6 ', () => {
+    it ('return Fizz when given 6 ', () => {
     
     expect(fizzBuzz(6)).toEqual('Fizz');
     });*/
