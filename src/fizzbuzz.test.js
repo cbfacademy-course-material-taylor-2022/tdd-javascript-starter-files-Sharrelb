@@ -7,6 +7,7 @@ describe('The fizzBuzz function should', () => {
     ${1} | ${1}
     ${3} | ${'Fizz'}
     ${6} | ${'Fizz'}
+    ${9} | ${'Fizz'}
     `('return $expecyed wjem hobem $input ', ({input,expected}) => {
       const actual = fizzBuzz(input)
       expect(actual).toEqual(expected);
