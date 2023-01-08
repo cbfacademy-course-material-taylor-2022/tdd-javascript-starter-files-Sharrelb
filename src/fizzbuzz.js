@@ -1,3 +1,4 @@
 export const fizzBuzz = (number) => {
- throw new Error ('Not implemented');
+   if(number ===3) return 'Fizz'; 
+ return number;
 }
