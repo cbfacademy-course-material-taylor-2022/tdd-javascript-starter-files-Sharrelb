@@ -6,4 +6,11 @@ describe('The fizzBuzz function should', () => {
     
     expect(actual).toEqual(1);
     });
+
+     it ('return Fizz when given ', () => {
+       const actual = fizzBuzz(3);
+        
+     expect(actual).toEqual('Fizz');
+    });
+        
 });
