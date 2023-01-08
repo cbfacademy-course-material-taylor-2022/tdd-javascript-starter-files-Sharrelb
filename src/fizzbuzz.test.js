@@ -2,7 +2,19 @@ import { fizzBuzz } from "./fizzbuzz";
 
 describe('The fizzBuzz function should', () => {
    
-    it ('return 1 when given 1', () => {
+    it.each`
+    input | expected
+    ${1} | ${1}
+    ${3} | ${'Fizz'}
+    ${6} | ${'Fizz'}
+    `('return $expecyed wjem hobem $input ', ({input,expected}) => {
+      const actual = fizzBuzz(input)
+      expect(actual).toEqual(expected);
+    })
+    
+
+});
+   /* it ('return 1 when given 1', () => {
 
         expect(fizzBuzz(1)).toEqual(1);
         });
@@ -16,9 +28,5 @@ describe('The fizzBuzz function should', () => {
     it ('return 1 when given 6 ', () => {
     
     expect(fizzBuzz(6)).toEqual('Fizz');
-    });
+    });*/
 
-
-
-
-});
