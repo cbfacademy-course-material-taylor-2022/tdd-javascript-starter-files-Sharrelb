@@ -1,7 +1,7 @@
 import { fib } from "./fibonacci";
 
-describe ('The function should return')=>{
-    it.each`
+describe ('The function should return'() => {
+    it,each`
    input |expected
    ${0} | ${0} 
    ${1} | ${1}
@@ -14,4 +14,12 @@ describe ('The function should return')=>{
    ${8} | ${21}
    ${9} | ${34}
    ${10}| ${55}`
+
+   `('return $expected when given $input ', ({input,expected}) => {
+     const actual = fib (input)
+    expect(actual).toEqual(expected);
+  })
+  
+
+});
 }
